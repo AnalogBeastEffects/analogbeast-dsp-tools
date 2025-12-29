@@ -3,8 +3,8 @@
 
     ABLowPass.h
     Created: 29 Dec 2025 10:59:31am
-    Author:  nonox
-    Filtre Low Pass simple -6db/octaves type RC
+    Author: Arnaud DUBREUIL / Analog BEAST
+    Simple lowPass Filter IIR -6db/oct RC type
   ==============================================================================
 */
 
