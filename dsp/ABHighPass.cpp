@@ -3,8 +3,8 @@
 
     ABHighPass.cpp
     Created: 25 Dec 2025 5:58:03pm
-    Author:  nonox
-    Filtre High Pass simple -6db/octaves type RC
+    Author: Arnaud DUBREUIL / Analog BEAST
+    Simple highPass Filter IIR -6db/oct RC type
   ==============================================================================
 */
 
