@@ -3,8 +3,8 @@
 
     ABFilterIIR1Pole.h
     Created: 29 Dec 2025 12:16:30pm
-    Author:  nonox
-    IIR 1 pole type RC
+    Author: Arnaud DUBREUIL / Analog BEAST
+    IIR 1 pole RC Type
   ==============================================================================
 */
 
