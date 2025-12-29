@@ -1,22 +1,22 @@
 /*
   ==============================================================================
 
-    ABHighPass.h
+    ABHighPassRC2Pole.h
     Created: 25 Dec 2025 5:57:37pm
     Author: Arnaud DUBREUIL / Analog BEAST
-    Simple lowPass Filter IIR -6db/oct RC type
+    Double highPass Filter IIR -12db/oct RC type
   ==============================================================================
 */
 
 #pragma once
-#include <cmath>
-class ABHighPass
+#include "ABHighPass.h"
+class ABHighPassRC2Pole
 {
 public:
     void reset();
     void prepare(float sampleRate, float cutoffHz);
     float processSample(float sample);
 private:
-    float a0 = 0.0f;
-    float z1 = 0.0f;
+    ABHighPass filter1;
+    ABHighPass filter2;
 };

@@ -14,21 +14,15 @@
 void ABFilterIIR1Pole::prepare(float sampleRate, float cutoffHz)
 {
     const float x = std::exp(-2.0f * 3.14159265359f * cutoffHz / sampleRate);
-
-    // HPF 1-pole Coeff
-    a0 = (1.0f + x) * 0.5f;
-    b1 = x;
-
+    // LPF 1-pole Coeff
+    a0 = 1.0f - x;
     reset();
 }
 
 float ABFilterIIR1Pole::processSample(float x)
 {
-    const float y = z1 + a0 * (x - z1);
-
-    x1 = x;
-    z1 = y;
-    return y;
+    z1 += a0 * (x - z1);
+    return z1;
 }
 
 void ABFilterIIR1Pole::reset()
