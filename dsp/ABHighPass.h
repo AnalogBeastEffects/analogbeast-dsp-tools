@@ -3,8 +3,8 @@
 
     ABHighPass.h
     Created: 25 Dec 2025 5:57:37pm
-    Author:  nonox
-    Filtre High Pass simple -6db/octaves type RC
+    Author: Arnaud DUBREUIL / Analog BEAST
+    Simple lowPass Filter IIR -6db/oct RC type
   ==============================================================================
 */
 
